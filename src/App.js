@@ -5,6 +5,7 @@ import NavBar from './components/NavBar';
 import News from './components/News';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import LoadingBar from 'react-top-loading-bar'
+import Footer from './components/Footer';
 
 const App = ()=> {
   const pageSize = 5;
@@ -31,6 +32,7 @@ const App = ()=> {
           <Route exact path="/technology"><News setProgress={setProgress} apiKey={apiKey} key="technology" pageSize={pageSize} country="in" category="technology"/></Route> 
         </Switch>
         </Router>
+        <Footer />
       </div>
     )
  
